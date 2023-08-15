@@ -32,16 +32,16 @@ namespace UnitTestingRnD.Tests.Unit
         {
             // given
             var calcService = new CalculatorService();
-            var randomDoubleA = 5.2;
-            var randomDoubleB = 4.5;
-            var expectedValue = 9.7;
+            var randomDoubleA = 5.21;
+            var randomDoubleB = 4.51;
+            var expectedValue = 9.72;
 
             //when
             var actualValue = calcService.AddTwoDoubles(randomDoubleA, randomDoubleB);
 
             // then
 
-            Assert.Equal(expectedValue, actualValue);
+            Assert.Equal(expectedValue, actualValue,2);
 
         }
 
